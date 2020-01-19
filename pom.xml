@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.kaf.hibernate_udemy_tutorial</groupId>
+    <artifactId>Hibernate_udemy</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>1_JDBC</module>
+        <module>2_Hibernate_HelloWorld</module>
+        <module>3_Hibernate_Manipulating_Objects</module>
+        <module>4_Hibernate_Component_Mapping</module>
+        <module>5_Hibernate_Mapping_Associations</module>
+        <module>6_Hibernate_Cascades</module>
+        <module>7_Hibernate_OneToMany</module>
+        <module>8_Hibernate_OneToOne</module>
+        <module>9_Hibernate_ManyToMany</module>
+        <module>10_Hibernate_Enum</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.18</version>
+        </dependency>
+    </dependencies>
+    
+    <dependencyManagement>
+        <dependencies>
+            <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>5.4.10.Final</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.17</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+    
+</project>
